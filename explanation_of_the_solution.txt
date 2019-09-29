@@ -1,0 +1,2 @@
+To solve this challenge, I used iptables. Iptables is a set of tools and measures that allows the control and definition of firewalls and NATs rules.
+Iptables allows port forwarding, protocol switching as well as the option to redirect servers and services.
