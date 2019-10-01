@@ -1,2 +1,5 @@
 To solve this challenge, I used iptables. Iptables is a set of tools and measures that allows the control and definition of firewalls and NATs rules.
 Iptables allows port forwarding, protocol switching as well as the option to redirect servers and services.
+iptables has several tables, among which we will use nat. The nat table has the function of altering source or destination characteristics of the package.
+Among the nat table rule sets, we will use prerouting. the PREROUTING chain is responsible for packets that just arrived at the network interface. So far no routing decision has taken place, so it is not yet known whether the packet would be interpreted locally or would be forwarded to another machine located at another network interface. 
+This way every time a packet arrives over port 8000 from client_A it will be routed to the location we defined, in this case server b, to be processed.
